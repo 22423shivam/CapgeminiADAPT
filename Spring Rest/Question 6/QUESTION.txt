@@ -1,0 +1,7 @@
+6) Create a Calculator RESTful service that provides following functionality.
+1. Addition of the 2 numbers
+2. Subtraction of the 2 numbers
+3. Multiplication of 2 numbers
+4. Division of 2 numbers
+5. Finding square root of a number.
+ Consume the above RESTful web service by using RestTemplate.

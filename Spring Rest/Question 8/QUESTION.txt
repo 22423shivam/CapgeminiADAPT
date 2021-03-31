@@ -1,0 +1,7 @@
+8) Design and develop RESTful web service as follows:
+1. An admin can add a new product.
+2. An admin can update details of existing product.
+3. An admin can delete existing product
+4. An admin can view specific product
+5. An admin can view all the products
+ Note: Use MongoRepository of Spring data to store product details.

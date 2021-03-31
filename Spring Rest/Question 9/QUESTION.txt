@@ -1,0 +1,7 @@
+9) Design and develop RESTful web service as follows:
+1. Add a new customer information.
+2. Update customer information.
+3. Delete existing customer information.
+4. Fetch information of specific customer.
+5. Fetch information of all customers.
+Note: Use CrudRepository of Spring Data to store customer details.

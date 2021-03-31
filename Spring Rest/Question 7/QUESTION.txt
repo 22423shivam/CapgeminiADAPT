@@ -1,0 +1,7 @@
+7) Design and develop RESTful web service as follows:
+1. A user can place an order
+2. A user can update an order
+3. A user can view specific order
+4. A user can view all the orders
+5. A user can delete a specific order.
+Note: Use MongoRepository of Spring data to store order details

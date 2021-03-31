@@ -1,0 +1,130 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.capgemini.springrest</groupId>
+  <artifactId>course-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Java Brains Course Api</name>
+  <url>http://maven.apache.org</url>
+  
+  <parent>
+  		<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-parent</artifactId>
+    	<version>2.3.8.RELEASE</version>
+  </parent>
+  
+  <dependencies>
+  		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- Spring Data MongoDB-->
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-mongodb</artifactId>
+    </dependency>
+    <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+           
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+           
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+    		<groupId>javax.servlet</groupId>
+    		<artifactId>javax.servlet-api</artifactId>
+    		
+    		<scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml</groupId>
+            <artifactId>classmate</artifactId>
+            
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+           
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+      		<groupId>org.apache.poi</groupId>
+      		<artifactId>poi</artifactId>
+      		<version>3.15</version>
+    	</dependency>
+    	<dependency>
+ 		    <groupId>com.lowagie</groupId>
+      		<artifactId>itext</artifactId>
+      		<version>2.1.7</version>
+    	</dependency>
+    	<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.5.9</version>
+		</dependency>
+  </dependencies>
+  <properties>
+  	<java.version>15.0.1</java.version>
+  </properties>
+  <build>
+    <plugins>
+        <!-- Spring Boot Maven Support -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</project>
