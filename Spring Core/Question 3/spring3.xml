@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+       
+    
+    	<bean id="bankAccount1" class="springcore.com.BankAccount" scope="prototype">
+    <constructor-arg index="0" value="1"/>
+      <constructor-arg index="1" value="xyz"/>
+        <constructor-arg index="2" value="Saving"/>
+          <constructor-arg index="3" value="40000"/>
+         
+    </bean>
+    
+    <bean id="bankAccount2" class="springcore.com.BankAccount" scope="prototype">
+    <constructor-arg index="0" value="2"/>
+      <constructor-arg index="1" value="abc"/>
+        <constructor-arg index="2" value="Saving"/>
+          <constructor-arg index="3" value="30000"/>
+         
+    </bean>
+    
+    <bean id="bankAccountRe" class="springcore.com.BankAccountRepositoryImpl">
+ 
+  	<property name="accounts">
+  	<list>
+  	<ref bean="bankAccount1"></ref>
+  	<ref bean="bankAccount2"></ref>
+  	</list>
+  	</property>
+  	
+    </bean>
+    
+    <bean id="BankAccountServiceImpl" class="springcore.com.BankAccountServiceImpl">
+  	<constructor-arg ref="bankAccountRe"/>
+    </bean>
+    
+     <bean id="BankAccountController" class="springcore.com.BankAccountController">
+  	<constructor-arg ref="BankAccountServiceImpl"/>
+    </bean>
+    
+    </beans>
+ 
+ 
+  

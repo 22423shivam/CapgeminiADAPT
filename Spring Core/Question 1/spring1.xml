@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+       
+   <bean id="cus" class="springcore.Customer">  
+<property name="customerId" value="101"></property>
+<property name="customerName" value="Akshat Jain"></property>
+<property name="customerContact" value="9571445694"></property>
+<property name="customerAddress" value="Adarsh Colony"></property>
+</bean>
+<bean id="add" class="springcore.Address">
+<property name="street" value="Adarsh Colony"></property>
+<property name="city" value="Ajmer"></property>
+<property name="state" value="Rajasthan"></property>
+<property name="zip" value="305409"></property>
+<property name="country" value="India"></property>
+</bean>
+ 
+ 
+    </beans>

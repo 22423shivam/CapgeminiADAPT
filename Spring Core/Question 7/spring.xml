@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "https://www.springframework.org/dtd/spring-beans.dtd"> -->
+
+<beans	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+					http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+			xmlns:context="http://www.springframework.org/schema/context">
+	<context:annotation-config/>
+	
+	
+	
+	
+			
+<!--  	<bean id = "triangle" class = "io.org.javaBrains.Triangle" init-method="init" destroy-method="dest"/> -->
+	
+	<bean id = "rectangle" class = "io.org.shapeCount.Rectangle" >
+		<property name="length" value="2" />
+		<property name="breadth" value="5" />
+		<property name="height" value="7" />
+	</bean>
+	
+	
+	<bean id = "Calculate" class = "io.org.shapeCount.Calculate" >
+		<property name="perimeter" value="#{2*(rectangle.length + rectangle.breadth)}" />
+		<property name="volume" value="#{(rectangle.length * rectangle.breadth * rectangle.height)}"/>
+	</bean>
+
+
+</beans>

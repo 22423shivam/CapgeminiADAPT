@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+       
+   <bean id="ques" class="com.springassignment.Question">  
+   <property name="questionId" value= "1"></property>
+   <property name="question" value= "What are your hobbies?"></property>
+   <property name="answer1">
+   <list>
+<value>Football</value>
+<value>Listening Music</value>
+<value>Cooking</value>
+</list>
+</property>
+
+<property name="answer2">
+<set>
+<value>Cricket</value>
+<value>Reading Novel</value>
+<value>Gossips</value>
+</set>
+</property>
+
+
+<property name="answer3">
+<map>
+
+<entry key="1" value="Badminton" />
+<entry key="2" value="Sleeping" />
+<entry key="3" value="WatchingTV" />
+
+</map>
+</property>
+</bean>
+ 
+ 
+    </beans>
