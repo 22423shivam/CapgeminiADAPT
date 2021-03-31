@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        div.heading {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        body {
+            background-image: url('lpu.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 style="margin-bottom: 15px;">Welcome To Lovely Professional University</h1>
+        <h2 style="margin-top: 10px;">Registration Form</h2>
+    </div>
+    <form id="survey-form" action="/my-handling-form-page" method="post">
+        <fieldset style="background-color: rgba(238, 185, 168, 0.349);">
+            <legend>Personal Details</legend>
+
+            First name : <input type="text" required="name" placeholder="Enter your first name"> Last name : <input type="text" placeholder="Enter your last name">
+            <p>Father's Name : <input type="text" required="Father name" placeholder="Enter your Father's name"></p>
+            <p>Mother's Name : <input type="text" placeholder="Enter your Mother's name"></p>
+            <p>Date of birth : <input type="date" placeholder="Enter DOB"></p>
+            <p>Gender</p>
+            <p>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </p>
+            <p>Mobile Number : <input type="number" placeholder="Enter phone number" minlength="10"> </p>
+            <p>Address : <input type="text" placeholder="Enter your address"> Pincode : <input type="number" placeholder="Enter your Pincode"></p>
+            <p> City : <input type="text" placeholder="Enter your City"> State : <input type="text" placeholder="Enter your State"> Country : <input type="text" placeholder="Enter your Country"> </p>
+
+            <p>Your Hoobies:</p>
+            <p><input type="radio">Football</p>
+            <p><input type="radio">Cricket</p>
+            <p><input type="radio">Badminton</p>
+            <p> <input type="radio">Music</p>
+            </div>
+            <p><button <button type="button">Submit</button></p>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

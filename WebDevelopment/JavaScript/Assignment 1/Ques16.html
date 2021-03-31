@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+
+<body>
+    <script>
+        var yearsPrinted = 0;
+        var currentYear = 2021; //maybe these variables should be declared inside the function
+
+        function leapYears() {
+            while (yearsPrinted < 21) {
+                if ((currentYear % 4 === 0) && (!((currentYear % 100 === 0) && (currentYear % 400 !== 0)))) {
+
+                    document.write(currentYear + "<br>");
+                    yearsPrinted++;
+                    currentYear++;
+                } else {
+                    currentYear++;
+                }
+            }
+        }
+
+        leapYears();
+    </script>
+</body>
+
+</html>

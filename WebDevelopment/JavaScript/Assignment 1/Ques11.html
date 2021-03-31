@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+
+<body>
+    <form onsubmit="return myFunction()">
+        Name (max 10 characters): <input type="text" id="fname" size="20" name="fname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function myFunction() {
+            var fname = document.getElementById("fname").value;
+            submitOK = "true";
+
+            if (fname == "Alice" || fname == "Bob") {
+                alert("Welcome " + fname);
+                submitOK = "true";
+            }
+            if (fname != "Alice" || fname != "Bob") {
+                alert("Please enter name either Bob or Alice");
+                submitOK = "false";
+            }
+
+            if (submitOK == "false") {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

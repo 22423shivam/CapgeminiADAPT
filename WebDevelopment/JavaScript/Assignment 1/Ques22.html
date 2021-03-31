@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+
+<body>
+    <script>
+        function checkPalindrome(str) {
+
+            // convert string to an array
+            const arrayValues = string.split('');
+
+            // reverse the array values
+            const reverseArrayValues = arrayValues.reverse();
+
+            // convert array to string
+            const reverseString = reverseArrayValues.join('');
+
+            if (string == reverseString) {
+                console.log('It is a palindrome');
+            } else {
+                console.log('It is not a palindrome');
+            }
+        }
+
+        //take input
+        const string = prompt('Enter a string: ');
+
+        checkPalindrome(string);
+    </script>
+</body>
+
+</html>

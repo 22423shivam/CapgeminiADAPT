@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function square(x) {
+            return (x * x);
+        }
+
+        function double(x) {
+            return (x * 2);
+        }
+
+        function compose(fun1, fun2, f1) {
+            return (fun1(fun2(f1)));
+        }
+
+        var f1 = compose(square, double, 5);
+        console.log(f1);
+        var f1 = compose(square, double, 10);
+        console.log(f1);
+        var f2 = compose(double, square, 5);
+        console.log(f2);
+        var f2 = compose(double, square, 10);
+        console.log(f2);
+    </script>
+</body>
+
+</html>
