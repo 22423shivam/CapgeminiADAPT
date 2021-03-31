@@ -1,0 +1,10 @@
+4) Design and develop a Spring MVC web application as follows:
+a. Design a User model class having attributes username, password & email.
+b. Design registration.jsp to capture username, password and email. (Use
+ModelAttribute)
+c. UserController should receive the details and store into a database. (Use
+JdbcTemplate). After successful registration, it should return login view.
+d. Design login.jsp to capture username and password (Use ModelAttribute)
+e. UserController should receive the credentials and return “success” view if user is
+authenticated successfully, else return “error” view.
+f. Design success.jsp and error.jsp

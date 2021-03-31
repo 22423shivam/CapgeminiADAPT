@@ -1,0 +1,5 @@
+2) Design and develop a Spring MVC web application as follows:
+a. Design simpleInterest.jsp to capture principal amount, no. of years and rate of
+interest
+b. SimpleInterestController will receive these inputs and calculates simple interest.
+SimpleInterestController should return a view that contains simple interest.

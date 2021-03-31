@@ -1,0 +1,5 @@
+1) Design and develop a Spring MVC web application as follows:
+a. Create index.jsp page having one hyperlink. When user clicks on that hyperlink, it
+should call HelloWorldController.
+b. Design HelloWorldController class that returns a view helloWorld.jsp
+c. Design a helloWorld.jsp page that displays “Hello World” message.

@@ -1,0 +1,5 @@
+8) Example on i18n
+ Design and develop a Spring MVC web application as follows:
+a. Create a login.jsp page
+b. When user clicks on the French or Vietnam, page text should be changed to selected
+Locale.

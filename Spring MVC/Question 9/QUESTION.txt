@@ -1,0 +1,7 @@
+9) Design and develop a Spring MVC web application as follows:
+a. Create index.jsp page which contains one hyperlink as shown below
+b. Develop EmployeeController class that returns showAllEmployees view which
+displays only first 5 records and links to other pages that show further employee
+details.
+c. Create showAllEmployees.jsp
+d. Develop controller, service, repository layers and domain model classes.

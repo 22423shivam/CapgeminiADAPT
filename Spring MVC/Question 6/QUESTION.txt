@@ -1,0 +1,15 @@
+6) Example on Validation-API
+Develop a spring mvc application based on following guidelines.
+a. Design a class Customer with following attributes: username, password, email,
+contact, city and zip code.
+b. Design a registration.jsp page by using spring form tags.
+ Apply the following server-side validations to the above registration form:
+• Username should not be empty or null. Username should be alphanumeric and
+between 8 to 20 characters. Username should not contain space.
+• Password should not be empty or null. Password should contain at least one uppercase letter, lower-case letter, a digit or special character (_, $, #, ., @). Password should
+also be 8 to 20 characters long.
+ • Email should not be empty or null. Email should be valid.
+ • City should be selected.
+ • ZipCode should not be empty or null. It should be 6-digits.
+If user does not enter valid inputs, error messages should be shown on the registration form
+after the input field.

@@ -1,0 +1,21 @@
+5) Develop an "Employee Management System" that manages the information about
+employees
+ 1. Add a new employee
+ 2. Searching for specific employee
+ 3. Deleting an existing employee
+ 4. Finding all employees
+ 5. Editing/updating employee information.
+
+a. Create an Employee domain model class having following properties: employeeId,
+employeeName, employeeDepartment, employeeDesignation, employeeSalary.
+Employee Id should be generated automatically at database level.
+ 
+Refer following UI screens
+
+
+b. If user clicks on delete option, record should be deleted from the database.
+c. If user clicks on edit option, a form to be displayed on user screen where user can
+update Employee information.
+Note: Employee Id should be disbled and rest of the fields are editable.
+d. Use Spring JdbcTemplate to develop repository layer logic.
+e. Design appropriate controller, service and repository layer logics.
