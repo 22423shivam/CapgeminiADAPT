@@ -1,0 +1,9 @@
+<form class="delete-form" #deleteForm="ngForm" (ngSubmit)="onSubmit(deleteForm.value.resName)" novalidate>
+    <!-- {{deleteForm.value | json}} -->
+    <div class="form-group">
+        <label for="name">Restaurant Name:</label>
+        <input type="text" class="form-control" name="resName" [(ngModel)]="deleteModel.resName">
+    </div>
+    <br>
+    <button type="submit" mat-raised-button>Submit</button>
+</form>

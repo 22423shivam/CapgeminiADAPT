@@ -1,0 +1,12 @@
+div {
+    margin: 3rem;
+}
+
+
+/* mat-grid-tile{
+    background-color: darkcyan;
+  } */
+
+mat-grid-tile {
+    background: lightblue;
+}

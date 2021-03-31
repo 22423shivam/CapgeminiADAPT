@@ -1,0 +1,9 @@
+<form class="add-form" #addForm="ngForm" (ngSubmit)="onSubmit(addForm.value.resName)" novalidate>
+    <!-- {{addForm.value | json}} -->
+    <div class="form-group">
+        <label for="name">Restaurant Name:</label>
+        <input type="text" class="form-control" name="resName" [(ngModel)]="addModel.resName">
+    </div>
+    <br><br>
+    <button type="submit" mat-raised-button>Submit</button>
+</form>

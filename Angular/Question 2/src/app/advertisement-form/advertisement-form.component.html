@@ -1,0 +1,21 @@
+<h1>Advertisement Form</h1>
+
+<form #myForm="ngForm" (ngSubmit)="myForm.reset()" novalidate>
+
+    Title:<input required type="text" #title="ngModel" [class.invalid]="title.invalid && title.touched" name="title" ngModel><small [class.d-none]="title.valid || title.untouched">Title is required</small>
+
+    <br> Name:
+    <input type="text" #name="ngModel" [class.invalid]="name.invalid && name.touched" name="name" required [ngModel]="name1">
+    <small [class.d-none]="name.valid || name.untouched">Name is required</small><br> Category:
+
+    <select (blur)="catValidation(category.value)" (change)="catValidation(category.value)" [class.invalid]="catHasError && category.touched" #category="ngModel" name="category" ngModel required>
+        <option *ngFor="let cate of category1" value={{cate}}>{{cate}}</option>
+    </select>
+    <small [class.d-none]="!catHasError || category.untouched">Please Select a Category</small><br> Description: <input type="text" #desc="ngModel" [class.invalid]="desc.invalid && desc.touched" name="description" required ngModel>
+
+    <small [class.d-none]="desc.valid || desc.untouched">Description is required</small><br>
+
+    <button [disabled]="myForm.form.invalid" type="submit" (click)="storeData(myForm.value)">Submit</button>
+</form>
+
+<app-advertisement-table></app-advertisement-table>

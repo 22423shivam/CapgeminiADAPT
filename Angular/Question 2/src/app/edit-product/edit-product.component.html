@@ -1,0 +1,10 @@
+<h1>Edit Product Below</h1>
+
+<form #myForm1="ngForm">
+    Title:<input type="text" name="title" required [ngModel]="product.title"><br> Name:
+    <input type="text" name="name" required [ngModel]="product.name"><br> Category:
+    <select name="category" [ngModel]="product.category" required>
+        <option *ngFor="let cat of category" >{{cat}}</option>
+    </select><br> Description: <input type="text" name="description" required [ngModel]="product.description"><br>
+    <button (click)="updateAd(this.title,myForm1.value)">Update</button><button (click)="cancel()">Cancel</button>
+</form>

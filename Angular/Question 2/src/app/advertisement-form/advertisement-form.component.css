@@ -1,0 +1,15 @@
+input {
+    margin: 20px;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.d-none {
+    display: none;
+}
+
+small {
+    color: red;
+}

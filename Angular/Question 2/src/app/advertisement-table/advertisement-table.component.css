@@ -1,0 +1,24 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+td {
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    ;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}

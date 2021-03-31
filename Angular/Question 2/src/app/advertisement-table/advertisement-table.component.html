@@ -1,0 +1,22 @@
+<h1>Advertisement Table</h1>
+
+<br> Search Bar:<input type="text" [(ngModel)]="keyword">
+<br>
+<br>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Title</td>
+        <td>Category</td>
+        <td>Description</td>
+        <td>Actions</td>
+    </tr>
+    <tr *ngFor="let ad of adData | searchfilter:keyword">
+        <td>{{ad.name}}</td>
+        <td>{{ad.title}}</td>
+        <td>{{ad.category}}</td>
+        <td>{{ad.description}}</td>
+        <td><a (click)="toEdit(ad.title)">Edit</a> / <a (click)="toDelete(ad.title)">Delete</a></td>
+    </tr>
+</table>

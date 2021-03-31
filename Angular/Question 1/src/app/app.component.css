@@ -1,0 +1,21 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+}
+
+h1 {
+    color: #ff4848;
+}
+
+a {
+    color: white;
+}
+
+.example-button-row {
+    padding-right: 10px;
+}
+
+button {
+    margin: 20px;
+}
